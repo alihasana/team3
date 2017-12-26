@@ -1,0 +1,20 @@
+<div class="shopping-cart" ng-repeat = "item in itemCollection">
+    <!-- Title -->
+    <div class="title">
+        {{item.itemName}}
+    </div>
+
+    <!-- Image -->
+    <div class="image">
+        <!-- {{item.itemImage}} -->
+        <img src="front/home_images/cake4.jpeg" alt="">
+    </div>
+
+    <!-- details -->
+    <div class="item">
+        <div class="description">{{item.itemDescription}}</div>
+        <div class="product_price">{{item.itemPrice}}</div>
+        <button class="button_add" ng-click="addToCart(item)">Add</button>
+        <div>
+    </div>
+    </div>
