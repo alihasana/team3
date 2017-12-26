@@ -102,7 +102,7 @@ app.post('/postcart', function (req, res) {
         });
       } else {
         res.status(200).send({
-          message: 'Cart sent to data base', data: usercart
+          message: 'Cart', data: usercart
         });
     }
   });
