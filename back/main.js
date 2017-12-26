@@ -80,13 +80,13 @@ app.post('/create-account', function (req, res) {
         res.status(200).send({
           message: 'User created', data: newProfile
         });
-      };
+      }
     });
   } else {
     res.status(412).send({
       message: 'Email and Password  is mandatory to create the user', data: newProfile
     });
-  };
+  }
 });
 
 app.post('/postcart', function (req, res) {
@@ -102,7 +102,7 @@ app.post('/postcart', function (req, res) {
         });
       } else {
         res.status(200).send({
-          message: 'Cart', data: usercart
+          message: 'Cart sent to data base', data: usercart
         });
     }
   });
